@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>latihan ku</title>
+<style>
+    *{
+        box-sizing: border-box;      
+    }
+    body {
+        display: flex;
+        min-width: 30vh;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 4;  
+        background-color: pink; 
+    } 
+    #container {
+        display: flex;
+        flex: 1;
+    }
+    #container > article {
+        width: 10%;
+        flex: 1;
+        order: 60;
+        height: 450px;
+        background-color: rgb(241, 56, 56);
+        flex-wrap: nowrap;
+        flex-grow: 13;
+    }
+    .bismillah{
+        display: flex; 
+        width: 100%; 
+        justify-content: center; 
+    }
+    
+    #container > aside{
+        /* flex: 0 0 20vw; */
+        flex-grow: 2;
+    }
+   #container > aside {
+       background: rgb(61, 68, 68);
+       order: 2;
+       width : 200px;
+       flex: 20%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    header, footer {
+        background: turquoise;
+        height : 20vh; 
+    }
+    header, footer, article, nav, aside {
+        margin: 10px;
+        padding: 1em;
+    }
+</style>
+<body>
+    
+    <header>
+        <center><h2>Header</h2></center>
+    </header>
+    <div id="container">
+        <article >
+        <center><h2><p>Article</p></h2></center>
+        <div class="bismillah">
+            <img src="a.jpg" style="width: 250px; margin: 10px;">
+            <img src="b.jpg" style="width: 250px; margin: 10px;">
+            <img src="h.jpg" style="width: 250px; margin: 10px;">
+        </div>
+        </article>
+        <aside>
+             <center><h2>Aside</h2></center>
+        </aside>
+    </div>
+    <footer>
+         <center><h2>Footer</h2></center>
+    </footer>
+   
+</body>
+</html>
